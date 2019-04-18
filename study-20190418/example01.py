@@ -7,6 +7,8 @@ for line in handle:
     for word in words:
         counts[word] = counts.get(word, 0) + 1
 
+handle.close()
+
 bigcount = None
 bigword = None
 for word, count in counts.items():
